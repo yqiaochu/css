@@ -1,0 +1,44 @@
+html, body{
+			margin:0;
+			padding:0;
+		}
+		.page-container{
+			width: 100%;
+			background:#68cdd5;
+		}
+		.top{
+			padding:35px;
+		}
+		.logo{
+			text-align: center;
+		}
+		.content{
+			width: 70%;
+			height: 150px;
+			margin-left:auto;
+			margin-right:auto;
+			margin-top: 100px;
+			margin-bottom:100px;
+			font-size: 1.2rem;
+			color:#fff;
+			line-height: 1.8rem;
+		}
+		.icons{
+			width: 70%;
+			margin-left:auto;
+			margin-right:auto;
+			padding-bottom:150px;
+			font-size: 1.2rem;
+			color:#fff;
+			line-height: 2rem;
+		}
+		.icon1{
+			float:left;
+		}
+		.icon2{
+			float:right;
+		}
+		.clear{
+			clear:both;
+		}
+		
