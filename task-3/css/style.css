@@ -2,11 +2,7 @@ html, body{
 			margin:0;
 			padding:0;
 			height: 100%;
-		}
-		.page-container{
-			width: 100%;
 			background:#68cdd5;
-			height: 100%;
 		}
 		
 		.top{
