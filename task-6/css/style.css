@@ -12,8 +12,10 @@ body{
 header{
 	position: fixed;
 	top: 0;
-	display: flex;
 	width: 100%;
+}
+.header{
+	display: flex;
 	height: .5rem;
 	align-items: center;
 	text-align: center;
@@ -51,68 +53,65 @@ button{
 	background-position: -0.1rem -2.18rem; 
 	transform:scale(0.5);
 }
-
-main{
-	position: absolute;
-	top: .5rem;
-	bottom: .5rem;
-	width: 100%;
-	overflow-y: scroll;
-}
-
 .top{
 	display: flex;
-	height: .4rem;
-	width: 100%;
-	align-self: center;
-	border-bottom:solid .01rem #e1e5e7; 
+	top: .5rem;
+	border-bottom:solid .01rem #e1e5e7;
+	background-color: #ffffff;
+}
+.triangle{
+	display: inline-block;
+	position: absolute;
+	right: .15rem;
+	top: .18rem;
+    border-left: 0.05rem solid transparent;
+    border-right: 0.05rem solid transparent;
+    border-top: .05rem solid  #999999;
+}
+.nav{
+	position: relative;
+	border-right: solid .01rem #e1e5e7;
+	margin: 0;
+	padding: 0;
 }
 .nav,a{
-	padding: 0;
-	margin: 0;
-	/*overflow: hidden;*/
-	list-style:none;
-	font-size: .14rem;
-	color: #999999;
-	text-align: center;
-	height: .4rem;
-	line-height: .4rem;
-	text-decoration:none;
-}
-.plat{
-	padding: 0;
-	margin: 0;
+	display: inline-block;
 	width: 100%;
-	overflow: hidden;
-	list-style:none;
+	text-decoration:none;
+	line-height: .4rem;
 	font-size: .14rem;
+	text-align: center;
 	color: #999999;
-	text-align: center;	
-	background: #ffffff;
-	/*z-index: 9999;*/
-	/* 	height: .5rem;
-line-height: .5rem; */
 }
 
-.nav{
-	width: 30%; 
-	margin: auto;
-}
-
- a{
-    display: block;
-}
+.plat a:hover{background-color: #5fc0cd}
 
 .plat{
-	  display: none;
-
+	 z-index: 1;
+	 display: none;
+	 position: absolute;
+	 padding: 0;
+	 margin-top: .01rem;
+	 width: 100%; 
+	 font-size: .14rem;
+	 text-align: center;
+	 list-style: none;
+	 color: #999999;
+	 background-color: #ffffff;
+	 box-shadow: 0 .16rem .32rem 0 #999999;
 }
 .nav:hover .plat{
             display: block;
-			z-index：1;
-            clear: both;
         }
 
+main{
+	z-index: -1;
+	position: absolute;
+	top: .9rem;
+	bottom: .5rem;
+	overflow-y: scroll;
+	width: 100%;
+}
 
 .info {
 	padding: 0;
