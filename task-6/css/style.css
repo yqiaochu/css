@@ -21,7 +21,7 @@ header{
 	text-align: center;
 	background: #5fc0cd;
 }
-.button{
+.zgz{
 	overflow:hidden; 
 	margin: 0 auto;
 	width: 1.4rem;
@@ -32,7 +32,7 @@ header{
 	color: #ffffff;
 	background-color: #55a8b3;
 }
-button{
+.zhg{
 	display: inline-block;
 	float: right;
 	outline: none;
