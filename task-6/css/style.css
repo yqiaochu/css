@@ -21,13 +21,22 @@ header{
 	text-align: center;
 	background: #5fc0cd;
 }
-.zgz{
+.top-button{
 	overflow:hidden; 
 	margin: 0 auto;
-	width: 1.4rem;
 	height: .35rem;
 	border-radius: 0.05rem;
-	line-height: .35rem;
+	color: #ffffff;
+	background-color: #55a8b3;
+}
+.zgz{
+	display: inline-block;
+	float: left;
+	outline: none;
+	width: .7rem;
+	height: .35rem;
+	border:none;
+	border-radius: 0.05rem;
 	font-size: .17rem;
 	color: #ffffff;
 	background-color: #55a8b3;
@@ -62,7 +71,7 @@ header{
 .triangle{
 	display: inline-block;
 	position: absolute;
-	right: .15rem;
+	right: .08rem;
 	top: .18rem;
     border-left: 0.05rem solid transparent;
     border-right: 0.05rem solid transparent;
@@ -190,13 +199,26 @@ footer{
 	background-size: 0.57rem 1.93rem;
     background-position: -0.05rem -0.785rem;
 }
-.home{
+.edit{
+	outline: none;
 	margin: auto;
+	border:none;
+	color: #5fc0cd;	
+	background-color: #ffffff;
+}
+.home{
+	outline: none;
+	margin: auto;
+	border:none;
 	font-size: 0.1rem;
 	color: #5fc0cd;	
+	background-color: #ffffff;
 }
 .self{
+	outline: none;
 	margin: auto;
+	border:none;
 	font-size: 0.1rem;
 	color: #999999;
+	background-color: #ffffff;
 }
