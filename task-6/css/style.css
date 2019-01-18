@@ -174,7 +174,6 @@ footer{
 	position: fixed;
 	bottom: 0;
 	display: flex;
-	height: .5rem;
 	width: 100%;
 	align-self: center;
 	background: #f8fafb;	
@@ -182,7 +181,7 @@ footer{
 
 .home::before {
     display: block;
-    margin-bottom: .07rem;
+    margin-bottom: .05rem;
     content: "";
     width: .23rem; 
 	height: .20rem;
@@ -199,7 +198,7 @@ footer{
 }
 .self::before {
     display: block;
-    margin-bottom: .07rem;
+    margin-bottom: .05rem;
     content: "";
 	width: .21rem; 
 	height: .205rem;
@@ -213,8 +212,8 @@ footer{
 	border:none;
 	color: #5fc0cd;	
 	background-color: #ffffff; */
-	width: .45rem;
-    height: .45rem;
+	width: .5rem;
+    height: .5rem;
     border-radius: 50%;
     border-style: none;
     outline: none;
