@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>会议app</title>
+  <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+   <link rel="stylesheet" href="layui/css/layui.css" media="all">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+   <header>
+      <a href="index.html"><span class="back"></span></a>
+      <i data-method="offset" data-type="r" class="layui-icon layui-icon-username" ></i> 
+   </header>
+<main class="news-main">
+    <div class="news-name">xxxx新闻</div>
+    <p class="content">
+    对xxx进行讨论 对xxx进行讨论 对xxx进行讨论 对xxx进行讨论 对xxx进行讨论 对xxx进行讨论 对xxx进行讨论 对xxx进行讨论 对xxx进行讨论 对xxx进行讨论 对xxx进行讨论 对xxx进行讨论 对xxx进行讨论 对xxx进行讨论 对xxx进行讨论 对xxx进行讨论 对xxx进行讨论 对xxx进行讨论 对xxx进行讨论</P>
+    <p class="content">
+    对xxx进行讨论 对xxx进行讨论 对xxx进行讨论 对xxx进行讨论 对xxx进行讨论 对xxx进行讨论 对xxx进行讨论 对xxx进行讨论 对xxx进行讨论 对xxx进行讨论 对xxx进行讨论 对xxx进行讨论 对xxx进行讨论 对xxx进行讨论 对xxx进行讨论 对xxx进行讨论 对xxx进行讨论 对xxx进行讨论 对xxx进行讨论对xxx进行讨论 对xxx进行讨论 对xxx进行讨论 对xxx进行讨论 对xxx进行讨论 对xxx进行讨论 对xxx进行讨论 对xxx进行讨论 对xxx进行讨论 对xxx进行讨论 对xxx进行讨论 对xxx进行讨论 对xxx进行讨论 对xxx进行讨论 对xxx进行讨论 对xxx进行讨论 对xxx进行讨论 对xxx进行讨论 对xxx进行讨论</P>
+    <p class="content">
+    对xxx进行讨论 对xxx进行讨论 对xxx进行讨论 对xxx进行讨论 对xxx进行讨论 对xxx进行讨论 对xxx进行讨论 对xxx进行讨论 对xxx进行讨论 对xxx进行讨论 对xxx进行讨论 对xxx进行讨论 对xxx进行讨论 对xxx进行讨论 对xxx进行讨论 对xxx进行讨论 对xxx进行讨论 对xxx进行讨论 对xxx进行讨论对xxx进行讨论 对xxx进行讨论 对xxx进行讨论 对xxx进行讨论 对xxx进行讨论 对xxx进行讨论 对xxx进行讨论 对xxx进行讨论 对xxx进行讨论 对xxx进行讨论 对xxx进行讨论 对xxx进行讨论 对xxx进行讨论 对xxx进行讨论 对xxx进行讨论 对xxx进行讨论 对xxx进行讨论 对xxx进行讨论 对xxx进行讨论</P>
+</main>
+<script src="layui/layui.js"></script>
+<script>
+layui.use('layer', function(){ //独立版的layer无需执行这一句
+  var $ = layui.jquery, layer = layui.layer; //独立版的layer无需执行这一句
+  
+  //触发事件
+  var active = {
+      offset: function(othis){
+      var type = othis.data('type')
+      ,text = othis.text();
+      
+      layer.open({
+        type: 1
+        ,offset: type //具体配置参考：http://www.layui.com/doc/modules/layer.html#offset
+        ,id: 'layerDemo'+type //防止重复弹出
+        ,content: '<div style="padding: 20px 100px;">'+"您有2场会议待参加" +'</div>'
+        ,btn: '关闭'
+        ,btnAlign: 'c' //按钮居中
+        ,shade: 0 //不显示遮罩
+        ,yes: function(){
+          layer.closeAll();
+        }
+      });
+    }
+  };
+  
+  $('.layui-icon-username').on('click', function(){
+    var othis = $(this), method = othis.data('method');
+    active[method] ? active[method].call(this, othis) : '';
+  });
+  
+});
+</script>
+
+</body>
+</html>

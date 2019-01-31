@@ -21,10 +21,6 @@ header{
 	text-align: center;
 	background-color: #5fc0cd;
 	color: #fff;
-	/* background-image: url(../images/back.png);
-	background-size:1.1rem 1.9rem;
-	background-position: 1.5rem center;
-	background-repeat: no-repeat; */
 }
 .back{
     position: absolute;
