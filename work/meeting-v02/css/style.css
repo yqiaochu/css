@@ -41,7 +41,7 @@ main{
 
 
 .zhc{
-	height: 2.5rem;
+	height: 2.8rem;
 	text-align: center;
 	line-height: 2.5rem;
 	font-size: .3rem;
@@ -61,6 +61,7 @@ main{
 }
 .group{
 	text-align:center;
+	margin-top: .15rem;
 }
 .fzzt{
 	display: inline-block;
