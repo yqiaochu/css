@@ -28,6 +28,7 @@ main{
 	position: absolute;
 	top: .4rem;
 	width: 100%;
+	height: 100%;
 	background-color: #f0f0f0;
 }
 .index-lasttime{
@@ -45,4 +46,27 @@ ul,li{
 	padding:0;
 	margin: 0;
 	font-size: .12rem;
+}
+ul{
+	margin:0 .18rem;
+	border:solid .01rem #c9c9c9;
+	text-align: center;
+
+}
+.index-content{
+	/* height: .45rem; */
+	line-height: .45rem;
+
+}
+.index-content li{
+	
+}
+.version{
+	height: .65rem;
+	width: 80%;
+	margin:auto;
+	line-height: .65rem;
+	background-color:  #69d1e9;
+	font-size: .16rem;
+	color: #ffffff;
 }
