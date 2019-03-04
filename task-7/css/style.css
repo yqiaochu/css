@@ -33,7 +33,7 @@ main{
 }
 .next{
     position: absolute;
-    right:12%;
+    right:.25rem;
     top: .4rem;
     width: .13rem;
     height: .13rem;
@@ -68,7 +68,7 @@ li{
 }
 ul{
 	list-style:none;
-	padding:0 0 .15rem 0;
+	padding:0 0 .05rem 0;
 	margin:0 .18rem;
 	border:solid .01rem #c9c9c9;
 	font-size: .16rem;
@@ -81,9 +81,7 @@ ul{
 	line-height: .45rem;
 
 }
-.index-content li{
-	
-}
+
 .version{
 	height: .65rem;
 	width: 80%;
@@ -92,4 +90,29 @@ ul{
 	background-color:  #69d1e9;
 	font-size: .16rem;
 	color: #ffffff;
+}
+.ccb::after{
+	content:"";
+	position: absolute;
+	top:2.85rem;
+	right: .1rem;
+	border-width: .15rem;
+	border-style: solid;
+	border-color: transparent transparent transparent #FBB435;
+}
+.bottom span{
+	display: inline-block;
+	height: .1rem;
+	width: .1rem;
+	border-radius: 50%;
+	background-color:#e8e8e8;
+	margin: 0 .01rem ;
+
+}
+.bottom{
+	height: .15rem;
+	line-height: .15rem;
+}
+.on{
+	background-color: #69d1e9 !important;
 }
